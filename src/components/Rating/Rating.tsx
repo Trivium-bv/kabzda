@@ -1,6 +1,10 @@
 import {Star} from "../Star/Star.tsx";
 
-export const Rating = (props: any) => {
+type RatingPropsType = {
+    value: 0 | 1 | 2 | 3 | 4 | 5
+}
+
+export const Rating = (props: RatingPropsType) => {
     console.log("Rating rendering")
     if (props.value === 1) {
         return (

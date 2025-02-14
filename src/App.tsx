@@ -9,8 +9,8 @@ const App = () => {
             <PageTitle title={"My Friends"}/>
             <div>Article 1</div>
             <Rating value={0}/>
-            <Accordion title={"Films"}/>
-            <Accordion title={"Games"}/>
+            <Accordion title={"Films"} collapsed={true}/>
+            <Accordion title={"Games"} collapsed={false}/>
             <div>Article 2</div>
             <Rating value={0}/>
             <Rating value={1}/>
@@ -21,7 +21,12 @@ const App = () => {
         </div>
     )
 }
-const PageTitle = (props: any) => {
+
+type PageTitlePropsType = {
+    title: string
+}
+
+const PageTitle = (props: PageTitlePropsType) => {
     console.log("PageTitle rendering")
     return <h1>{props.title}</h1>
 }
