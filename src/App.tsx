@@ -1,65 +1,29 @@
+import {Accordion} from "./components/Accordion/Accordion.tsx";
+import {Rating} from "./components/Rating/Rating.tsx";
+
 const App = () => {
     console.log("App rendering")
     return (
         <div>
-            <AppTitle/>
-            <Rating/>
-            <Accordion/>
+            <PageTitle title={"This is APP Component"}/>
+            <PageTitle title={"My Friends"}/>
+            <div>Article 1</div>
+            <Rating value={0}/>
+            <Accordion title={"Films"}/>
+            <Accordion title={"Games"}/>
+            <div>Article 2</div>
+            <Rating value={0}/>
+            <Rating value={1}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={4}/>
+            <Rating value={5}/>
         </div>
     )
 }
-const AppTitle = () => {
-    console.log("AppTitle rendering")
-    return <>This is APP Component</>
-}
-
-const Rating = () => {
-    console.log("Rating rendering")
-    return (
-        <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </div>
-    )
-}
-const Accordion = () => {
-    console.log("Accordion rendering")
-    return (
-        <div>
-            <AccordionTitle/>
-            <AccordionBody/>
-        </div>
-    )
-}
-
-const Star = () => {
-    console.log("Star rendering")
-    return (
-        <div>
-            <div>star</div>
-        </div>
-    )
-}
-
-const AccordionTitle = () => {
-    console.log("AccordionTitle rendering")
-    return (
-        <h3> Menu </h3>
-    )
-}
-
-const AccordionBody = () => {
-    console.log("AccordionBody rendering")
-    return (
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    )
+const PageTitle = (props: any) => {
+    console.log("PageTitle rendering")
+    return <h1>{props.title}</h1>
 }
 
 export default App
