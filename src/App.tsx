@@ -1,5 +1,6 @@
 import {Accordion} from "./components/Accordion/Accordion.tsx";
 import {Rating} from "./components/Rating/Rating.tsx";
+import {Cars} from "./components/Cars/Cars.tsx";
 
 const App = () => {
     console.log("App rendering")
@@ -18,6 +19,7 @@ const App = () => {
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
+            <Cars />
         </div>
     )
 }
