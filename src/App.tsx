@@ -1,19 +1,20 @@
 // import {Accordion} from "./components/Accordion/Accordion.tsx";
 // import {Rating} from "./components/Rating/Rating.tsx";
 // import {Cars} from "./components/Cars/Cars.tsx";
-import {Button} from "./components/Button/Button.tsx";
+//import {Button} from "./components/Button/Button.tsx";
+import {Button2} from "./components/Button/Button2.tsx";
 
 const App = () => {
 
-    const Button1Foo = (subscriber: string, age: number, adress: string) => {
-        console.log(subscriber, age, adress)
-    }
-    const Button2Foo = (subscriber: string) => {
-        console.log(subscriber)
-    }
-    const Button3Foo = () => {
-        console.log("Im stupped button")
-    }
+    // const Button1Foo = (subscriber: string, age: number, adress: string) => {
+    //     console.log(subscriber, age, adress)
+    // }
+    // const Button2Foo = (subscriber: string) => {
+    //     console.log(subscriber)
+    // }
+    // const Button3Foo = () => {
+    //     console.log("Im stupped button")
+    // }
     return (
         <div>
             {/*<PageTitle title={"This is APP Component"}/>*/}
@@ -30,9 +31,10 @@ const App = () => {
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
             {/*<Cars />*/}
-            <Button name={"Button 1"} callBack={() => Button1Foo("Im Vasya", 21, "Minsk")}/>
-            <Button name={"Button 2"} callBack={() => Button2Foo("Im Ivan")}/>
-            <Button name={"Button 3"} callBack={Button3Foo}/>
+            {/*<Button name={"Button 1"} callBack={() => Button1Foo("Im Vasya", 21, "Minsk")}/>*/}
+            {/*<Button name={"Button 2"} callBack={() => Button2Foo("Im Ivan")}/>*/}
+            {/*<Button name={"Button 3"} callBack={Button3Foo}/>*/}
+            <Button2/>
         </div>
     )
 }
