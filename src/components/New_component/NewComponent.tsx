@@ -1,7 +1,6 @@
 import {FilterType, MoneyType} from "../Money/Money.tsx";
 
 type PropsType = {
-    money: MoneyType[]
     currentMoney: MoneyType[]
     onClickFilterHandler: (nameButton: FilterType) => void
 }
