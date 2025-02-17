@@ -2,7 +2,8 @@
 // import {Rating} from "./components/Rating/Rating.tsx";
 // import {Cars} from "./components/Cars/Cars.tsx";
 //import {Button} from "./components/Button/Button.tsx";
-import {Button2} from "./components/Button/Button2.tsx";
+//import {Button2} from "./components/Button/Button2.tsx";
+import {Money} from "./components/Money/Money.tsx";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
     // }
     return (
         <div>
+            <Money />
             {/*<PageTitle title={"This is APP Component"}/>*/}
             {/*<PageTitle title={"My Friends"}/>*/}
             {/*<div>Article 1</div>*/}
@@ -34,7 +36,7 @@ const App = () => {
             {/*<Button name={"Button 1"} callBack={() => Button1Foo("Im Vasya", 21, "Minsk")}/>*/}
             {/*<Button name={"Button 2"} callBack={() => Button2Foo("Im Ivan")}/>*/}
             {/*<Button name={"Button 3"} callBack={Button3Foo}/>*/}
-            <Button2/>
+            {/*<Button2/>*/}
         </div>
     )
 }
