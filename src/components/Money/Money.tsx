@@ -1,12 +1,12 @@
 import {useState} from "react";
+import {NewComponent} from "../New_component/NewComponent.tsx";
 
-type MoneyType = {
+export type FilterType = 'all' | 'rubles' | 'dollar'
+export type MoneyType = {
     banknots: string,
     value: number,
     number: string
 }
-
-type FilterType = 'all' | 'rubles' | 'dollar'
 
 export const Money = () => {
     const [money, setMoney] = useState([
@@ -24,7 +24,7 @@ export const Money = () => {
 
     let currentMoney = money
     if (filter === 'rubles') {
-              currentMoney = money.filter((filteredMoney) => filteredMoney.banknots === 'RUBLS')
+        currentMoney = money.filter((filteredMoney) => filteredMoney.banknots === 'RUBLS')
     }
     if (filter === 'dollar') {
         currentMoney = money.filter((filteredMoney) => filteredMoney.banknots === 'Dollars')
@@ -36,22 +36,7 @@ export const Money = () => {
 
     return (
         <>
-            <ul>
-                {currentMoney.map((money: MoneyType, index) => {
-                    return (
-                        <li key={index}>
-                            <span>{money.banknots}</span>
-                            <span>{money.value}</span>
-                            <span>{money.number}</span>
-                        </li>
-                    )
-                })}
-            </ul>
-            <div style={{marginLeft: '35px'}}>
-                <button onClick={() => onClickFilterHandler("all")}>all</button>
-                <button onClick={() => onClickFilterHandler("rubles")}>rubles</button>
-                <button onClick={() => onClickFilterHandler("dollar")}>dollar</button>
-            </div>
+            <NewComponent onClickFilterHandler={onClickFilterHandler} money={money} currentMoney={currentMoney}/>
         </>
     )
 
