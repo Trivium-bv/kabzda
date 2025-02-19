@@ -1,9 +1,9 @@
-// import {Accordion} from "./components/Accordion/Accordion.tsx";
+import {Accordion} from "./components/Accordion/Accordion.tsx";
 // import {Rating} from "./components/Rating/Rating.tsx";
 // import {Cars} from "./components/Cars/Cars.tsx";
 //import {Button} from "./components/Button/Button.tsx";
 //import {Button2} from "./components/Button/Button2.tsx";
-import {Money} from "./components/Money/Money.tsx";
+//import {Money} from "./components/Money/Money.tsx";
 
 const App = () => {
 
@@ -18,13 +18,13 @@ const App = () => {
     // }
     return (
         <div>
-            <Money />
+            {/*<Money />*/}
             {/*<PageTitle title={"This is APP Component"}/>*/}
             {/*<PageTitle title={"My Friends"}/>*/}
             {/*<div>Article 1</div>*/}
             {/*<Rating value={0}/>*/}
-            {/*<Accordion title={"Films"} collapsed={true}/>*/}
-            {/*<Accordion title={"Games"} collapsed={false}/>*/}
+            <Accordion title={"Films"} collapsed={true}/>
+            <Accordion title={"Games"} collapsed={false}/>
             {/*<div>Article 2</div>*/}
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}

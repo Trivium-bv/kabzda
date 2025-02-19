@@ -1,39 +1,29 @@
-
 type AccordionPropsType = {
     title: string
     collapsed: boolean
 }
-
-
-export const Accordion = (props: AccordionPropsType) => {
-    console.log("Accordion rendering")
-    if (props.collapsed) {
-        return (
-            <div>
-                <AccordionTitle title={props.title}/>
-                <AccordionBody/>
-            </div>
-        )
-    } else {
-        return (
-            <div>
-                <AccordionTitle title={props.title}/>
-            </div>
-        )
-    }
-}
-
 type AccordionTitlePropsType = {
     title: string
 }
 
+export const Accordion = (props: AccordionPropsType) => {
+    console.log('Accordion rendering')
+        return (
+            <div>
+                <AccordionTitle title={props.title}/>
+                {/*{props.collapsed === false && <AccordionBody/>}*/}
+                {!props.collapsed && <AccordionBody/>}
+            </div>
+        )
+}
+
 const AccordionTitle = (props: AccordionTitlePropsType) => {
-    console.log("AccordionTitle rendering")
+    console.log('AccordionTitle rendering')
     return <h3>{props.title}</h3>
 }
 
 const AccordionBody = () => {
-    console.log("AccordionBody rendering")
+    console.log('AccordionBody rendering')
     return (
         <ul>
             <li>1</li>
