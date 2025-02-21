@@ -1,10 +1,12 @@
 //import {Accordion} from './components/Accordion/Accordion.tsx';
 //import {Rating} from './components/Rating/Rating.tsx';
-import {OnOff} from './components/OnOff/OnOff.tsx';
+//import {OnOff} from './components/OnOff/OnOff.tsx';
 // import {Cars} from "./components/Cars/Cars.tsx";
 //import {Button} from "./components/Button/Button.tsx";
 //import {Button2} from "./components/Button/Button2.tsx";
 //import {Money} from "./components/Money/Money.tsx";
+
+import {InputJointBtn} from './components/InputBtn/InputJointBtn.tsx';
 
 const App = () => {
 
@@ -19,7 +21,8 @@ const App = () => {
     // }
     return (
         <div>
-            <OnOff activate={true}/>
+            <InputJointBtn />
+            {/*<OnOff activate={true}/>*/}
             {/*<Money />*/}
             {/*<PageTitle title={"This is APP Component"}/>*/}
             {/*<PageTitle title={"My Friends"}/>*/}
