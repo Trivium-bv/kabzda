@@ -4,7 +4,7 @@ type addMessageType = {
     addMessage: (title: string) => void
 }
 
-export const FullInputBtn = (props: addMessageType) => {
+export const InputBtn = (props: addMessageType) => {
     const [title,setTitle] = useState('');
 
     const onChangeInputHandler = (event:ChangeEvent<HTMLInputElement>) => {

@@ -5,8 +5,11 @@
 //import {Button} from "./components/Button/Button.tsx";
 //import {Button2} from "./components/Button/Button2.tsx";
 //import {Money} from "./components/Money/Money.tsx";
+//import {InputJointBtn} from './components/InputBtn/InputJointBtn.tsx';
+//import {MainInput1, MainInputs} from './components/Inputs/Input1/mainInput1.tsx';
+import {MainInput2} from './components/Inputs/Input2/mainInput2.tsx';
 
-import {InputJointBtn} from './components/InputBtn/InputJointBtn.tsx';
+
 
 const App = () => {
 
@@ -21,7 +24,8 @@ const App = () => {
     // }
     return (
         <div>
-            <InputJointBtn />
+            {/*<MainInput1 />*/}
+            <MainInput2 />
             {/*<OnOff activate={true}/>*/}
             {/*<Money />*/}
             {/*<PageTitle title={"This is APP Component"}/>*/}
