@@ -1,13 +1,14 @@
 //import {Accordion} from './components/Accordion/Accordion.tsx';
 //import {Rating} from './components/Rating/Rating.tsx';
 //import {OnOff} from './components/OnOff/OnOff.tsx';
-// import {Cars} from "./components/Cars/Cars.tsx";
+//import {Cars} from "./components/Cars/Cars.tsx";
 //import {Button} from "./components/Button/Button.tsx";
 //import {Button2} from "./components/Button/Button2.tsx";
+import {Lesson_callback} from './components/Lesson_callback/Lesson_callback.tsx';
 //import {Money} from "./components/Money/Money.tsx";
 //import {InputJointBtn} from './components/InputBtn/InputJointBtn.tsx';
 //import {MainInput1, MainInputs} from './components/Inputs/Input1/mainInput1.tsx';
-import {MainInput2} from './components/Inputs/Input2/mainInput2.tsx';
+//import {MainInput2} from './components/Inputs/Input2/mainInput2.tsx';
 
 
 
@@ -24,8 +25,9 @@ const App = () => {
     // }
     return (
         <div>
+            <Lesson_callback/>
             {/*<MainInput1 />*/}
-            <MainInput2 />
+            {/*<MainInput2 />*/}
             {/*<OnOff activate={true}/>*/}
             {/*<Money />*/}
             {/*<PageTitle title={"This is APP Component"}/>*/}
