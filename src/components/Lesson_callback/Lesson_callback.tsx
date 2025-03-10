@@ -5,12 +5,10 @@ export const Lesson_callback = () => {
     const focusLostHandler = () => {
         console.log('focus lost');
     }
-
     const deleteUser = () => {
 
         alert('user have been deleted');
     }
-
     const saveUser = () => {
         alert('user has been saved');
     }
