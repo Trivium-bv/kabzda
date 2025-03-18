@@ -2,7 +2,7 @@ type LessonType = {
     title: string
 }
 
-type ManType = {
+export type ManType = {
     name: string
     age: number
     lessons: Array<LessonType>
