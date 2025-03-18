@@ -1,3 +1,5 @@
+
+
 test("", () => {
     const man = {
         name: "Dimych",
@@ -20,3 +22,4 @@ const {title} = man.adress.street
     expect(lessons.length).toBe(2);
     expect(title.length).toBe("Nezavisimosti street");
 })
+
