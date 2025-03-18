@@ -15,15 +15,19 @@ type ManType = {
 type PropsType = {
     title: string
     man: ManType
+    food: Array<string>
+    car: {model: string}
 }
 
-export const ManComponent = ({title, man}: PropsType) => {
+export const ManComponent = ({title, man, ...props}: PropsType) => {
     //const {title, man} = props;
+    //const {title, man, ...restProps} = props;
     return (
         <div>
             <h1>{title}</h1>
             <hr/>
             <div>{man.name}</div>
+            <div>{props.food}</div>
         </div>
     )
 }
